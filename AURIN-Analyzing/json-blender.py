@@ -38,14 +38,11 @@ with open('/Users/hayden/Desktop/Alldata/SydneyAgedRate.json', 'r') as f:
                 dddict[key] += value
     print(dddict)
 
-
-
 # def foldProperties(dic1, dic2):
 #     newDic = {}
 #     for (key, value) in dic1.items():
 #         newDic[key] = dic1[key] + dic2[key]
 #
 #     return newDic
-
 
 
