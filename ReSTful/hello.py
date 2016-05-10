@@ -216,7 +216,7 @@ def twitter_sydney():
 #-------------------------------------------------------------------------------
 
 @app.route('/aurin/rate_in_melbourne',methods = ['GET'])
-def aurin_melbourne):
+def aurin_melbourne():
     melboure_data_aurin = {
         'unemployment population':  176645,
         'employment population':  1971396,
