@@ -105,7 +105,12 @@ def pop_adelaide():
 @app.route('/aurin/twitter_in_adelaide',methods = ['GET'])
 def twitter_adelaide():
     adelaide_data_twitter = {
-
+        '_id' : 'Adelaide',
+        'politics relevant' : 107194,
+        'politics irrelevant' : 195533,
+        'positive' : 20358,
+        'negative' : 5615,
+        'neutral' : 276754,
     }
     return jsonify(adelaide_data_twitter)
 
@@ -154,13 +159,11 @@ def pop_brisbane():
 def twitter_brisbane():
     brisbane_data_twitter = {
         '_id' : 'Brisbane',
-        '_rev' : '1-169481506d37e1b174f509a5340eafb8',
         'politics relevant' : 130493,
         'politics irrelevant' : 247475,
         'positive' : 25457,
         'negative' : 7134,
         'neutral' : 345377,
-        'total' : 377968
     }
     return jsonify(brisbane_data_twitter)
 
@@ -207,7 +210,12 @@ def pop_sydney():
 @app.route('/aurin/twitter_in_sydney',methods = ['GET'])
 def twitter_sydney():
     sydney_data_twitter = {
-
+        '_id' : 'Sydney',
+        'politics relevant' : 231144,
+        'politics irrelevant' : 527132,
+        'positive' : 36823,
+        'negative' : 11702,
+        'neutral' : 709751,
     }
     return jsonify(sydney_data_twitter)
 
@@ -224,7 +232,7 @@ def aurin_melbourne():
         'unemp rate':  0.054764439588757485,
         'emp rate':  0.6111828647712539
     }
-    return jsonify(melbourne_data_aurin)
+    return json.dumps(melbourne_data_aurin)
 
 @app.route('/aurin/popandage_in_melbourne',methods = ['GET'])
 def pop_melbourne():
@@ -254,8 +262,13 @@ def pop_melbourne():
 
 @app.route('/aurin/twitter_in_melbourne',methods = ['GET'])
 def twitter_melbourne():
-    sydney_data_twitter = {
-
+    melbourne_data_twitter = {
+        '_id' : 'Melbourne',
+        'politics relevant' : 291573,
+        'politics irrelevant' : 468427,
+        'positive' : 47694,
+        'negative' : 14108,
+        'neutral' : 698198,
     }
     return jsonify(melbourne_data_twitter)
 
