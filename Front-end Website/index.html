@@ -37,15 +37,13 @@
   <script src="js/jquery-ui.js"></script>
   <!--<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
   <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
-  <script type="text/javascript" src="js/us-states.js"></script>
-  <script type="text/javascript" src="js/BrisbaneOccRate.js"></script>
+  <script type="text/javascript" src="js/employment_4cities.js"></script>
+
+
 
   <style type="text/css">
     .img-border { border: 3px solid rgb(4,128,58); }
     .duty { color: rgb(4,128,58); }
-
-
-
   </style>
 
 
@@ -102,7 +100,9 @@
         </div>
       </div>
       <div class="container hero-text2">
-      <h3>Lorem ipsum dolor sit amet, ea eum labitur scsstie percipitoleat<br/> fabulas complectitur deterruisset at pro</h3>
+        <h3>This is the web application showing our result of assignment2.</h3>
+        <p>To see how to use this app, click the button and watch the instruction video.</p>
+        <a href="https://www.youtube.com/" class="btn btn-info btn-lg" role="button" target="_blank">Watch Instruction Video</a>
       </div>
     </section>
 
@@ -297,7 +297,9 @@
       <!-- Heading -->
       <hr/>
       <h2>Twitter Data Analysis</h2>
-      <p>To analysis data fetched from twitter, we also download some data from <a href="http://portal.aurin.org.au">AURIN</a>.</p>
+      <p>We dig the sentiment of the twitter from the twitter harvester to analysis whether it contains positive emotions,
+        negative emotions or a natural emotion for the authors. We also decide to search whether a tweet is related to
+        politics as our scenarios</p>
     </div>
 
     <div id="tabs" style="background: none repeat scroll 0% 0% rgb(255, 255, 255);">
@@ -306,12 +308,18 @@
         <li onclick="pieChart()"><a href="#tabs-2">Sentiment Analysis</a></li>
       </ul>
       <div id="tabs-1">
-        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+        <p></p>
+        <p>From the graph, twitter users in Melbourne tend not to be very active in publishing their opinions to certain
+          political affairs. The other three areas seem to have the similar percentage for people show more opinions to politics.</p>
         <div id="barChartContainer" style="height: 250px; width: 80%; margin: auto"></div>
-        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+        <p>When considering the data from twitter harvester and the scenarios situation we try to search, some informations of
+          the population distribution of each city by different age levels. Moreover, political affairs can always affect the
+          employment rate and unemployment rate of a certain area. So we also try to find if there are some relationship between
+          the employment rate and politics focusing level in each city. In this way, another datasets we need in AURIN is the
+          employment and unemployment rate of each city.</p>
       </div>
       <div id="tabs-2" >
-
+        <p>All data from twitter in four areas will be grouped in three levels: positive, negative and neutral.</p>
         <div class="container-fluid">
           <div class="row-fluid">
             <div class="col-md-3 col-sm-3 col-xs-6">
@@ -329,15 +337,13 @@
           </div>
         </div>
         <!--<div id="barChartContainer2" style="height: 250px; width: 80%; margin: auto"></div>-->
-
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
-        <br><br>
-
-        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-
-
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>in those four area, many tweets do not present an emotion. Moreover, according to the total numbers of the tweets
+          in four cities, the percentages of the positive tweets or negative tweets are very similar. People in Adelaide and
+          Brisbane express more emotions especially positive emotions than Melbourne and Sydney by using twitter.</p>
+        <p>Although people in Adelaide and Brisbane tend to express their emotion more, the total numbers of people show
+          their happiness and sadness are less than the other two cities. The reason mainly because the number of twitter
+          users in Melbourne and Sydney are higher than Brisbane and Adelaide.</p>
 
       </div>
 
@@ -364,33 +370,26 @@
 
     <div id="tabs-aurin" style="background: none repeat scroll 0% 0% rgb(255, 255, 255);">
       <ul style="background: lightgrey;">
-        <li><a href="#tabs-aurin-1">Adelaide</a></li>
-        <li><a href="#tabs-aurin-2">Brisbane</a></li>
-        <li><a href="#tabs-aurin-3">Melbourne</a></li>
-        <li><a href="#tabs-aurin-4">Sydney</a></li>
+        <li><a href="#tabs-aurin-1">Employment Rate</a></li>
+        <li><a href="#tabs-aurin-2">Age Distribution</a></li>
       </ul>
       <div id="tabs-aurin-1">
-        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
-      </div>
-      <div id="tabs-aurin-2">
-        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
         <div class="container-fluid">
           <div class="row-fluid">
-
             <div id="map"></div>
           </div>
         </div>
-
-
         <script type="text/javascript">
+          //var map = L.map('map').setView([-27.452068, 153.044959], 10.54);
+          var map = L.map("map").setView([-34.909437, 138.551485], 11);
+//          var map = L.map("map").setView([-37.806027, 144.963262], 11.2);
 
-          var map = L.map('map').setView([-27.452068, 153.044959], 10.54);
 
           var mapboxAccessToken = "pk.eyJ1IjoiaGFpZG9uZ3ciLCJhIjoiY2lseDEyNnF5MDVxaHVka3M4eHI3bWVnaiJ9.3zSqNekaroRp0zGsCCCfYQ";
           L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
             maxZoom: 18,
             attribution: 'Data &copy; <a href="https://portal.aurin.org.au/">AURIN</a>',
-            id: 'mapbox.dark'
+            id: 'mapbox.streets'
           }).addTo(map);
 
           //map.dragging.disable();
@@ -406,7 +405,7 @@
           };
 
           info.update = function (props) {
-            this._div.innerHTML = "<h4>Brisbane</h4>" +  (props ?
+            this._div.innerHTML = "<h4>Employment Rate</h4>" +  (props ?
                 '<b>' + props.feature_name + '</b><br />' + props.Employment_to_population_ratio : 'Hover over a suburb');
           };
 
@@ -414,7 +413,7 @@
 
 
           // Add listeners to geoJSON layer
-          var geojson = L.geoJson(brisbaneData, {
+          var geojson = L.geoJson(employmentData, {
             style: style,
             onEachFeature: onEachFeature
           }).addTo(map);
@@ -489,54 +488,145 @@
             });
           }
 
-
-
-
-
-
-          var legend = L.control({position: 'bottomright'});
-
-          legend.onAdd = function (map) {
-
-            var div = L.DomUtil.create('div', 'info legend'),
-                grades = [0, 10, 20, 50, 100, 200, 500, 1000],
-                labels = [],
-                from, to;
-
-            for (var i = 0; i < grades.length; i++) {
-              from = grades[i];
-              to = grades[i + 1];
-
-              labels.push(
-                  '<i style="background:' + getColor(from + 1) + '"></i> ' +
-                  from + (to ? '&ndash;' + to : '+'));
-            }
-
-            div.innerHTML = labels.join('<br>');
-            return div;
-          };
-
-          legend.addTo(map);
+//          var legend = L.control({position: 'bottomright'});
+//
+//          legend.onAdd = function (map) {
+//
+//            var div = L.DomUtil.create('div', 'info legend'),
+//                grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+//                labels = [],
+//                from, to;
+//
+//            for (var i = 0; i < grades.length; i++) {
+//              from = grades[i];
+//              to = grades[i + 1];
+//
+//              labels.push(
+//                  '<i style="background:' + getColor(from + 1) + '"></i> ' +
+//                  from + (to ? '&ndash;' + to : '+'));
+//            }
+//
+//            div.innerHTML = labels.join('<br>');
+//            return div;
+//          };
+//
+//          legend.addTo(map);
 
         </script>
       </div>
-      <div id="tabs-aurin-3">
-        <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-        <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-      </div>
-      <div id="tabs-aurin-4">
+      <div id="tabs-aurin-2">
+        <div class="container">
+          <h2>Associative Data</h2>
+          <p>The .table-hover class enables a hover state on table rows:</p>
+          <hr/>
+          <p>When handling AURIN’s data, we found that the datasets we try to find is based on Statistic Area 2 that including
+            the Greater Melbourne, the Greater Sydney, the Greater Brisbane and the Greater adelaide. By using AURIN’s filter,
+            we only search the data in certain bounding box related to twitter harvesters’ areas. However, institutions in AURIN
+            collect the data according to the suburbs of the four area. So we using some merge algorithms to calculate the data
+            to make them shown in city level.</p>
+          <table class="table table-striped table-hover">
+            <thead class="thead-inverse">
+            <tr>
+              <th>#</th>
+              <th>Adelaide</th>
+              <th>Brisbane</th>
+              <th>Melbourne</th>
+              <th>Sydney</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>0-9</td>
+              <td>151975</td>
+              <td>296818</td>
+              <td>395013</td>
+              <td>579587</td>
+            </tr>
+            <tr>
+              <td>10-19</td>
+              <td>155439</td>
+              <td>281906</td>
+              <td>364667</td>
+              <td>525467</td>
+            </tr>
+            <tr>
+              <td>20-29</td>
+              <td>189155</td>
+              <td>352865</td>
+              <td>545781</td>
+              <td>696791</td>
+            </tr>
+            <tr>
+              <td>30-39</td>
+              <td>169031</td>
+              <td>323124</td>
+              <td>507816</td>
+              <td>694766</td>
+            </tr>
+            <tr>
+              <td>40-49</td>
+              <td>179203</td>
+              <td>307181</td>
+              <td>451936</td>
+              <td>620981</td>
+            </tr>
+            <tr>
+              <td>50-59</td>
+              <td>170484</td>
+              <td>258945</td>
+              <td>383863</td>
+              <td>542461</td>
+            </tr>
+            <tr>
+              <td>60-69</td>
+              <td>137827</td>
+              <td>193392</td>
+              <td>288307</td>
+              <td>401816</td>
+            </tr>
+            <tr>
 
+              <td>70-79</td>
+              <td>83063</td>
+              <td>102211</td>
+              <td>172353</td>
+              <td>229435</td>
+            </tr>
+            <tr>
+              <td>85+</td>
+              <td>61203</td>
+              <td>65037</td>
+              <td>115806</td>
+              <td>156621</td>
+            </tr>
+            <tr>
+              <td>Sum</td>
+              <td>1297380</td>
+              <td>2181479</td>
+              <td>3225542</td>
+              <td>4447925</td>
+            </tr>
+            <tr>
+              <td>Average Age</td>
+              <td>39.75</td>
+              <td>36.52</td>
+              <td>37.77</td>
+              <td>37.53</td>
+            </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <p>Brisbane is the youngest city while Adelaide is the oldest one in those four cities. Melbourne and Sydney own a
+          really similar architecture in age distribution.</p>
       </div>
     </div>
 
   </section>
 
-  <br/>
-  <br/>
+  <br/><br/>
 
   <section id="associative_analysis">
-
-
     <script>
       $(function() {
         $( "#asso-tabs" ).tabs();
@@ -547,7 +637,8 @@
     <div class=" text-center">
       <!-- Heading -->
       <h2>Associative Analysis</h2>
-      <p>To analysis data fetched from twitter, we also download some data from <a href="http://portal.aurin.org.au">AURIN</a>.</p>
+      <p>After finishing collecting and analysing data from twitter and AURIN. We must combine these data to see if there
+        is any relationship between the properties in those data.</p>
     </div>
 
     <div id="asso-tabs" style="background: none repeat scroll 0% 0% rgb(255, 255, 255);">
@@ -560,8 +651,7 @@
       <div id="asso-tabs-1">
 
         <div class="container">
-          <h2>Associative Data</h2>
-          <p>The .table-hover class enables a hover state on table rows:</p>
+          <!--<h2>Associative Data</h2>-->
           <hr/>
           <table class="table table-hover">
             <thead class="thead-inverse">
@@ -630,52 +720,57 @@
         </div>
 
 
-        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
-        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
       </div>
       <div id="asso-tabs-2">
         <div class="container-fluid">
           <div class="row-fluid">
-            <div class="col-md-4 col-sm-4 col-xs-6">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 col-sm-6 col-xs-6">
               <img alt="140x140" src="images/charts/p_pos_emp.png"/>
             </div>
-            <div class="col-md-4 col-sm-4 col-xs-6">
+            <div class="col-md-4 col-sm-6 col-xs-6">
               <img alt="140x140" src="images/charts/p_neg_unemp.png"/>
             </div>
-            <div class="col-md-4 col-sm-4 col-xs-6">
-            </div>
+            <div class="col-md-2"></div>
           </div>
         </div>
-        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+        <p>Sydney owns lowest politics relevance while the employment rate is either the lowest one or the highest one.
+          Meanwhile, Adelaide got a lowest employment rate and second highest political relevance.</p>
+        <p>For the second part, it is almost can not find a rule either. In this way, there is not an obvious regularization.</p>
+
       </div>
       <div id="asso-tabs-3" >
         <div class="container-fluid">
           <div class="row-fluid">
-            <div class="col-md-4 col-sm-4 col-xs-6">
+            <div class="col-md-2"></div>
+
+            <div class="col-md-4 col-sm-6 col-xs-6">
               <img alt="140x140" src="images/charts/p_emp_pol.png"/>
             </div>
-            <div class="col-md-4 col-sm-4 col-xs-6">
+            <div class="col-md-4 col-sm-6 col-xs-6">
               <img alt="140x140" src="images/charts/p-unemp_pol.png"/>
             </div>
-            <div class="col-md-4 col-sm-4 col-xs-6">
-            </div>
+            <div class="col-md-2"></div>
+
           </div>
         </div>
-        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+        <!--<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>-->
 
       </div>
       <div id="asso-tabs-4">
         <div class="container-fluid">
           <div class="row-fluid">
-            <div class="col-md-8 col-sm-8 col-xs-12">
+            <div class="col-md-2"></div>
+
+            <div class="col-md-8 col-sm-12 col-xs-12">
               <img alt="140x140" src="images/charts/avg_age.png"/>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-6">
 
             </div>
+            <div class="col-md-2"></div>
+
           </div>
         </div>
-        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+        <!--<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>-->
 
       </div>
 
@@ -691,7 +786,7 @@
       <div class="heading text-center">
         <!-- Heading -->
         <h2>Group Members</h2>
-        <p>At variations of passages of Lorem Ipsum available, but the majority have suffered alteration..</p>
+        <!--<p>At variations of passages of Lorem Ipsum available, but the majority have suffered alteration..</p>-->
       </div>
 
       <div class="row-fluid">
@@ -911,20 +1006,19 @@
 
 
 
-    <script src="js/modernizr-latest.js"></script>
-    <!--<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>-->
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/jquery.isotope.min.js" type="text/javascript"></script>
-    <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
-    <script src="js/jquery.nav.js" type="text/javascript"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/waypoints.js"></script>
+  <script src="js/modernizr-latest.js"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/jquery.isotope.min.js" type="text/javascript"></script>
+  <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <script src="js/jquery.nav.js" type="text/javascript"></script>
+  <script src="js/jquery.fittext.js"></script>
+  <script src="js/waypoints.js"></script>
 
     <!--<script src="contact/jqBootstrapValidation.js"></script>-->
     <!--<script src="contact/contact_me.js"></script>-->
 
-    <script src="js/custom.js" type="text/javascript"></script>
-    <script src="js/owl-carousel/owl.carousel.js"></script>
+  <script src="js/custom.js" type="text/javascript"></script>
+  <script src="js/owl-carousel/owl.carousel.js"></script>
 
   <script type="text/javascript" src="canvasjs.min.js"></script></head>
 
